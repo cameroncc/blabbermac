@@ -18,7 +18,7 @@ There are three pieces you need to use this system. This section describes how t
    the contents to be spoken. See below for the file format.
 3. (Optional) Copy blabbermac.sh to any location on the machine that suits you.
 
-### (Optional) Cron job
+### Cron job (Optional)
 1. If you wish to schedule this program, simply add a cron job that runs it on whatever schedule you
    like. This can be used to make your Mac speak anything at any time, with a minute or less of
    delay. For help with writing cron jobs, see [crontab.guru](crontab.guru).
@@ -32,12 +32,14 @@ There are three pieces you need to use this system. This section describes how t
 ```
 
 ### dewit flag
-Type: boolean
-Allowed Values: 0 or 1
+- Type: boolean
+- Allowed Values: 0 or 1
 
-### (optional) voice
-Type: string
-Allowed Values: As of macOS Big Sur, there are several voices that can be used. See below for a list of voices together with their localizations. If no voice is selected, this line must be left blank and the default voice, Alex, will be used.
+### voice (optional)
+- Type: string
+- Allowed Values: As of macOS Big Sur, there are several voices that can be used. See below for a
+list of voices with their localizations. **If no voice is selected, this line must be left blank**
+and the default voice, Alex, will be used.
 
 | Voice     | Localization |
 |-----------|--------------|
@@ -91,5 +93,5 @@ Allowed Values: As of macOS Big Sur, there are several voices that can be used. 
 | Zuzana    | cs_CZ        |
 
 ### text to speak
-Type: string
-Value: Any alphanumeric string
+- Type: string
+- Value: Any alphanumeric string
