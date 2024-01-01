@@ -37,9 +37,81 @@ There are three pieces you need to use this system. This section describes how t
 
 ### voice (optional)
 - Type: string
-- Allowed Values: As of macOS Big Sur, there are several voices that can be used. See below for a
-list of voices with their localizations. **If no voice is selected, this line must be left blank**
-and the default voice, Alex, will be used.
+- Allowed Values: There are several voices that can be used in modern versions of macOS. See below
+for a list of voices. **If no voice is selected, this line must be left blank** and the default
+voice will be used.
+
+| Voice     | Localization |
+|-----------|--------------|
+| Albert    | en_US        |
+| Alice     | it_IT        |
+| Alva      | sv_SE        |
+| Amélie    | fr_CA        |
+| Amira     | ms_MY        |
+| Anna      | de_DE        |
+| Bad News  | en_US        |
+| Bahh      | en_US        |
+| Bells     | en_US        |
+| Boing     | en_US        |
+| Bubbles   | en_US        |
+| Carmit    | he_IL        |
+| Cellos    | en_US        |
+| Damayanti | id_ID        |
+| Daniel    | en_GB        |
+| Daria     | bg_BG        |
+| Wobble    | en_US        |
+| Ellen     | nl_BE        |
+| Fred      | en_US        |
+| Good News | en_US        |
+| Jester    | en_US        |
+| Ioana     | ro_RO        |
+| Jacques   | fr_FR        |
+| Joana     | pt_PT        |
+| Junior    | en_US        |
+| Kanya     | th_TH        |
+| Karen     | en_AU        |
+| Kathy     | en_US        |
+| Kyoko     | ja_JP        |
+| Lana      | hr_HR        |
+| Laura     | sk_SK        |
+| Lekha     | hi_IN        |
+| Lesya     | uk_UA        |
+| Linh      | vi_VN        |
+| Luciana   | pt_BR        |
+| Majed     | ar_001       |
+| Tünde     | hu_HU        |
+| Meijia    | zh_TW        |
+| Melina    | el_GR        |
+| Milena    | ru_RU        |
+| Moira     | en_IE        |
+| Mónica    | es_ES        |
+| Montse    | ca_ES        |
+| Nora      | nb_NO        |
+| Organ     | en_US        |
+| Paulina   | es_MX        |
+| Superstar | en_US        |
+| Ralph     | en_US        |
+| Rishi     | en_IN        |
+| Samantha  | en_US        |
+| Sara      | da_DK        |
+| Satu      | fi_FI        |
+| Sinji     | zh_HK        |
+| Tessa     | en_ZA        |
+| Thomas    | fr_FR        |
+| Tingting  | zh_CN        |
+| Trinoids  | en_US        |
+| Whisper   | en_US        |
+| Xander    | nl_NL        |
+| Yelda     | tr_TR        |
+| Yuna      | ko_KR        |
+| Zarvox    | en_US        |
+| Zosia     | pl_PL        |
+| Zuzana    | cs_CZ        |
+
+
+
+
+Old voices (before macOS Ventura)
 
 | Voice     | Localization |
 |-----------|--------------|

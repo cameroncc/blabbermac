@@ -1,8 +1,8 @@
 #!/bin/bash
 # Designed by r0botninja in California
-# v2022.04.20
+# v2023.12.31
 
-REMOTE_FILE_URL="http://your.server/path/to/text/file"
+REMOTE_FILE_URL="http://localhost:8080/words.txt"
 
 SCRIPTPATH="$(cd "$(dirname "$0")" ; pwd -P)"
 absPath="$SCRIPTPATH/$(basename $0)"
@@ -19,18 +19,18 @@ else
     exit 1
 fi
 
-# Check for voice
-VOICE="alex"
+# Build 'say' command
 line2="$(cat ~/.$filename | head -n 2 | tail -n 1)"
+SAY_CMD="say"
 if [[ $line2 != "" ]]; then
-    VOICE=$line2
+    SAY_CMD="say -v $line2"
 fi
 
 if [ "$dewit" = true ]; then
     currMute=$(osascript -e 'output muted of(get volume settings)')
     currVol=$(osascript -e 'output volume of (get volume settings)')
     osascript -e 'set volume output volume 100'
-    cat ~/.$filename | tail -n $(expr $lines - 2) | say -v $VOICE
+    cat ~/.$filename | tail -n $(expr $lines - 2) | $SAY_CMD
     osascript -e "set volume output volume $currVol"
     osascript -e "set volume output muted $currMute"
 fi
